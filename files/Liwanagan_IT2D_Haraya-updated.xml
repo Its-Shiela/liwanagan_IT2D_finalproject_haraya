@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE haraya [
-<!ELEMENT haraya (home, discover, directory, events)>
+<!ELEMENT haraya (home, discover, directory, events, home-3)>
 	<!ELEMENT home (todaysPick, latest_update)> 
 	<!ELEMENT todaysPick (p1, p2, p3, p4)>
 	<!ELEMENT latest_update (p5, Lookism, p6, p7, p8, p9, p10)>
