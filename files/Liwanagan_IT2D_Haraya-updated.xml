@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE haraya [
-<!ELEMENT haraya (home)>
+<!ELEMENT haraya (home, discover, directory, events)>
 	<!ELEMENT home (todaysPick, latest_update)> 
 	<!ELEMENT todaysPick (p1, p2, p3, p4)>
-	<!ELEMENT latest_update (p5, p6, p7, p8, p9, p10)>
-
-	
+	<!ELEMENT latest_update (p5, Lookism, p6, p7, p8, p9, p10)>
+	<!ELEMENT Lookism (title, author, day, summary, episode1, episode2, episode3, p5, p6)>
+	<!ELEMENT episode1 (chap1)>
+	<!ELEMENT chap1 (p19, author, comment)>
+	<!ELEMENT comment (comment1, comment2)>
+	<!ELEMENT comment1 (author, cmnt)>
+	<!ELEMENT comment2 (author,cmnt)>
 
 	<!ELEMENT discover (genre, language, status)>
 	<!ELEMENT genre (box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11, box12, box13, box15, box16, box17, box18, box19, box20, box21, box22, box23, box24, box25, box26, box27, box28, box29, bopx30, box31, box32, box33, box34, box35, box36)>
@@ -33,8 +37,6 @@
 	<!ELEMENT new-series (fill3, fill4, fill5)>
 
 
-
-
 	<!ELEMENT haraya (#PCDATA)>
 	<!ELEMENT home (#PCDATA)>
 	<!ELEMENT todaysPick (#PCDATA)>
@@ -44,7 +46,21 @@
 	<!ELEMENT p4 (#PCDATA)>
 	<!ELEMENT latest_update (#PCDATA)>
 	<!ELEMENT p5 (#PCDATA)>
-	<!ELEMENT p5 (#PCDATA)>
+	<!ELEMENT Lookism (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ELEMENT day (#PCDATA)>
+	<!ELEMENT summary (#PCDATA)>
+	<!ELEMENT episode1 (#PCDATA)>
+	<!ELEMENT episode2 (#PCDATA)>
+	<!ELEMENT episode3 (#PCDATA)>
+	<!ELEMENT chap1 (#PCDATA)>
+	<!ELEMENT p19 (#PCDATA)>
+	<!ELEMENT comment (#PCDATA)>
+	<!ELEMENT comment1 (#PCDATA)>
+	<!ELEMENT comment2 (#PCDATA)>
+	<!ELEMENT cmnt (#PCDATA)>
+	<!ELEMENT p6 (#PCDATA)>
 	<!ELEMENT p7 (#PCDATA)>
 	<!ELEMENT p8 (#PCDATA)>
 	<!ELEMENT p9 (#PCDATA)>
@@ -165,7 +181,7 @@
 	]>
 
 
-	
+
 <haraya>
 	<home>
 	  <todaysPick>
@@ -176,6 +192,36 @@
 	  </todaysPick>
 	  <latest_update>
 	      <p5>photo_5</p5>
+		      <Lookism>
+		      		<title>Lookism</title>
+		      		<author>Taejun Park</author>
+		      		<day>Every Sunday</day>
+		      		<summary>Daniel is an unattractive loner who wakes up in a different body. Now tall, handsome, and cooler than ever in his new form, Daniel aims to achieve everything he couldn't before. How far will he go to keep his body... and his secrets?</summary>
+		      		<epsiode1>
+		      			<chap1>
+			      			<p19>chap_1</p19>
+			      			<author>Taejun Park</author>   			
+
+			      			<comment>
+			      				<comment1>
+			      					<author>Sasuke</author>
+			      					<cmnt>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</cmnt>
+			      				</comment1>
+			      				<comment2>
+			      					<author>Sasuke</author>
+			      					<cmnt>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</cmnt>
+			      				</comment2>
+			      			</comment>
+
+		      			</chap1>
+		      		</epsiode1>	      		
+		      		<episode2>ep2</episode2>
+		      		<episode3>ep3</episode3>
+		      		<p5>photo_5</p5>
+		      		<p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>
+		      		<p5>photo_6</p5>
+		      		<p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>	      
+		      	</Lookism>
 	      <p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>
 	      <p7>photo_7</p7>
 	      <p8>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p8>
@@ -313,10 +359,40 @@
 		<p18>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p18>
 	</events>
 
-	<home-3>
+		<home-3>
 		<my-comics>
 			<p19>img1</p19>
 			<title>Lookism</title>
+			<Lookism>
+		      		<title>Lookism</title>
+		      		<author>Taejun Park</author>
+		      		<day>Every Sunday</day>
+		      		<summary>Daniel is an unattractive loner who wakes up in a different body. Now tall, handsome, and cooler than ever in his new form, Daniel aims to achieve everything he couldn't before. How far will he go to keep his body... and his secrets?</summary>
+		      		<epsiode1>
+		      			<chap1>
+			      			<p19>chap_1</p19>
+			      			<author>Taejun Park</author>   			
+
+			      			<comment>
+			      				<comment1>
+			      					<author>Sasuke</author>
+			      					<cmnt>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</cmnt>
+			      				</comment1>
+			      				<comment2>
+			      					<author>Sasuke</author>
+			      					<cmnt>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</cmnt>
+			      				</comment2>
+			      			</comment>
+
+		      			</chap1>
+		      		</epsiode1>	      		
+		      		<episode2>ep2</episode2>
+		      		<episode3>ep3</episode3>
+		      		<p5>photo_5</p5>
+		      		<p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>
+		      		<p5>photo_6</p5>
+		      		<p6>Lorem ipsum dolor sit amet. Et nemo sunt ut fugit consectetur a aliquam porro et galisum molestiae cum consequatur laudantium vel voluptatem mollitia sed deleniti sunt! Est laudantium quae aut dolor molestiae sit corrupti optio et consequuntur deleniti et quia quas!</p6>	      
+		      	</Lookism>
 			<genre1>drama</genre1>
 			<chapter>Chapter 1</chapter>
 		</my-comics>
@@ -367,90 +443,3 @@
 
 	</home-3>	
 </haraya>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
